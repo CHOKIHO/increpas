@@ -21,7 +21,7 @@ public class String_Method02 {
 		char ch = name.charAt(5);
 		System.out.println("3번째 문자 : " + ch);
 		
-		String ss = name.substring(0, 5);  //1번부터 (5-1) 까지  --'Hong ' 
+		String ss = name.substring(0, 5);  //1번부터 (5-1) 까지  --'Hong ' //substring과 indexOf의 조합
 		System.out.println("추출문장 : " + ss);
 		
 		String s2 = ss.trim();

@@ -18,18 +18,18 @@ public class String04 {
 		 *aaabbc - 이메일 확인 성공
 		 *
 		 */		
-		
-		String[] str;
-		
+
 		Scanner sc = new Scanner(System.in);
 		System.out.print("이메일 : ");
-		str = sc.nextLine().split("@");
+		String[] email = sc.nextLine().split("@");
 		
-		if (str[0].length() <6 || str[0].length() > 10) {
+		//String len = email.substring(0, email.indexOf('@'));
+		
+		if (email[0].length() < 6 || email[0].length() > 10) {
 			System.out.println("이메일 형식이 올바르지 않습니다.");
-		}else{
-			System.out.println(str[0]+" - 이메일 확인성공");
-			
+		} else {
+			System.out.println(email[0] + " - 이메일 확인성공");
+
 		}
 	}
 

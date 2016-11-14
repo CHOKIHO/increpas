@@ -15,7 +15,8 @@ public class String05 {
 		 *
 		 */		
 		
-		Scanner sc = new Scanner(System.in);
+/*		
+   Scanner sc = new Scanner(System.in);
 		String tmp;
 
 		tmp = sc.next();
@@ -35,7 +36,27 @@ public class String05 {
 		} else {
 			System.out.println("회문수가 아닙니다.");
 		}
+		
+		*/
 
+		String str ="";
+		String str2=""; //null초기화도 가능하나 문자열을 이어붙일때 null이 붙는다.
+		Scanner sc = new Scanner(System.in);
+		System.out.print("정수 : ");
+		
+		str = sc.next();
+		//원본 str을 뒤집어서 str2에 저장하는 작업
+		for (int i=str.length();i>0;i--) {
+			str2 += str.charAt(i-1);
+		}
+		
+		System.out.println(str + " "+str2);
+		
+		if (str.equals(str2)) {
+			System.out.println("회문수 입니다.");
+		} else {
+			System.out.println("회문수가 아닙니다.");
+		}
 	}
 
 }
