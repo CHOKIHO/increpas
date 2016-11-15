@@ -1,6 +1,6 @@
 package work;
 
-public class Display {
+public class DisplayGraph {
 	
 	/*
 	 * 0~9사이의 난수를  100개 생성
