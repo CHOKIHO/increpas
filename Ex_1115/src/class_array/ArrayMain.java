@@ -5,11 +5,12 @@ public class ArrayMain {
 	public static void main(String[] args) {
 		
 		ArrayTest[] ats = new ArrayTest[10];
+		
 		ats[0] = new ArrayTest();
 		ats[1] = new ArrayTest();
 		
 		ArrayTest at1 = new ArrayTest();
-		ArrayTest at2 = new ArrayTest(); //1개 일때
+		ArrayTest at2 = new ArrayTest();
 		
 		String[]   str = new String[5];   //배열과 클래스와 동일 선언 및 초기화
 		str[0] = "abc";
@@ -20,9 +21,11 @@ public class ArrayMain {
 		 * 클래스 배열 (중요)
 		 */
 		ArrayTest[] at = new ArrayTest[2]; //준비상태 (비어있는상태-size만 할당됨) - 객체참조가 안된다.
-		at[0] = new ArrayTest();           //각각 생성자로 생성해주어야 한다. (객체화단계)  
+
+		at[0] = new ArrayTest();           //반드시 각각의 생성자로 생성해주어야 한다. (객체화단계)  
 		at[1] = new ArrayTest();
 		
+		/* 배열로 처리 */
 		for (int i = 0; i < at.length; i++) {
 			at[i] = new ArrayTest();
 		}

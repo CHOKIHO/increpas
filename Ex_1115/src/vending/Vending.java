@@ -6,6 +6,7 @@ public class Vending {
 	private int money;
 	
 	public Vending() {
+		//Can 클래스의 생성자를 이용한 초기화
 		can[0] = new Can("환타", 1000);
 		can[1] = new Can("사이다", 1100);
 		can[2] = new Can("비타오백", 1200);

@@ -5,6 +5,12 @@ public class Can {
 	private String canName;
 	private int price;
 	
+	//Can 생성자
+	public Can(String canName, int price) {
+		this.canName = canName;
+		this.price = price;
+	}
+	
 	public String getCanName() {
 		return canName;
 	}
@@ -17,12 +23,4 @@ public class Can {
 	public void setPrice(int price) {
 		this.price = price;
 	}
-	
-	public Can(String canName, int price) {
-		this.canName = canName;
-		this.price = price;
-	}
-	
-	
-	
 }
