@@ -8,7 +8,8 @@ public class Break02 {
 			n++;
 			if(n>5){
 				break;
-			}//if ¹®
+			}//if ë¬¸
+
 			
 		}//while
 		

@@ -2,13 +2,15 @@ package ex_break;
 
 public class Break01 {
 	public static void main(String[] args) {
-		//break¹® : ¹İº¹¹® ³»¿¡¼­ °­Á¦ÀûÀ¸·Î (°¡Àå °¡±î¿î) ¹İº¹¹®À» ºüÁ® ³ª°¥ ¶§ »ç¿ë.Switch,For,While, Do_While
+		//breakë¬¸ : ë°˜ë³µë¬¸ ë‚´ì—ì„œ ê°•ì œì ìœ¼ë¡œ (ê°€ì¥ ê°€ê¹Œìš´) ë°˜ë³µë¬¸ì„ ë¹ ì ¸ ë‚˜ê°ˆ ë•Œ ì‚¬ìš©.
+		//Switch,For,While, Do_While
+
+
 		for(int i = 1; i <= 2; i++){
 			for(int j = 1; j <= 10; j++){
 				
 				if(j % 2 == 0){
-					break; //break¸¦ ¸¸³ª¸é ¹İº¹¹®À» °­Á¦·Î ³ª¿À´Âµ¥, '³ª'¸¦( Æ÷ÇÔÇÏ°í ÀÖ´Â ¹İº¹¹® )Áß °¡Àå °¡±î¿î ¹İº¹¹® : inner
-					
+					break; //breakë¥¼ ë§Œë‚˜ë©´ ë°˜ë³µë¬¸ì„ ê°•ì œë¡œ ë‚˜ì˜¤ëŠ”ë°, 'ë‚˜'ë¥¼( í¬í•¨í•˜ê³  ìˆëŠ” ë°˜ë³µë¬¸ )ì¤‘ ê°€ì¥ ê°€ê¹Œìš´ ë°˜ë³µë¬¸ : inner
 				}
 				System.out.print(j + " ");
 				

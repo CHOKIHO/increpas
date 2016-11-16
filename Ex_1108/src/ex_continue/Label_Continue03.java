@@ -2,32 +2,31 @@ package ex_continue;
 
 public class Label_Continue03 {
 	public static void main(String[] args) {
-	
-				//label : °¡Àå °¡±î¿î ¹İº¹¹®À» ºüÁ®³ª¿À´Â break¿Í ´Ş¸®,
-				//Æ¯Á¤ ¹İº¹¹®¿¡ ÀÌ¸§À» ºÙ¿© ÇÑ¹ø¿¡ µÎ °³ ÀÌ»óÀ» ºüÁ®³ª¿Ã ¼ö ÀÖµµ·Ï ÇÏ´Â Å°¿öµå
-				outer :/*ÀÌ¸§ÁöÁ¤*/ for(int i = 1; i<=3; i++){
-					for(int j = 1; j<=3; j++){
-						if(j%2==0){
-							continue outer;//ÁöÁ¤ÇÑ ÀÌ¸§À» ºüÁ®³ª¿È
-						}
-						System.out.print(j);
-					}//inner
-					System.out.println();
-					
-				}//outer 
 
+		// label : ê°€ì¥ ê°€ê¹Œìš´ ë°˜ë³µë¬¸ì„ ë¹ ì ¸ë‚˜ì˜¤ëŠ” breakì™€ ë‹¬ë¦¬,
+		// íŠ¹ì • ë°˜ë³µë¬¸ì— ì´ë¦„ì„ ë¶™ì—¬ í•œë²ˆì— ë‘ ê°œ ì´ìƒì„ ë¹ ì ¸ë‚˜ì˜¬ ìˆ˜ ìˆë„ë¡ í•˜ëŠ” í‚¤ì›Œë“œ
+		outer: /* ì´ë¦„ì§€ì • */ for (int i = 1; i <= 3; i++) {
+			for (int j = 1; j <= 3; j++) {
+				if (j % 2 == 0) {
+					continue outer;// ì§€ì •í•œ ì´ë¦„ì„ ë¹ ì ¸ë‚˜ì˜´
+				}
+				System.out.print(j);
+			} // inner
+			System.out.println();
 
-	      outer : for(int i = 1;i<=3;i++){//¹İº¹¹®¿¡ ÀÌ¸§À» ºÙÀÓ
-	         for(int j = 1; j<=10 ;j++){
-	            if(j%2==0){
-	               continue outer;//Á¶°Ç¿¡ ¸Â¾ÒÀ»¶§ °¡Àå °¡±î¿î ¹İº¹¹®ÀÌ ¾Æ´Ñ ÇØ´ç ÀÌ¸§ÀÇ ¹İº¹¹®À» ºüÁ®³ª°£´Ù.
-	            }
-	            System.out.print(j + " ");
-	         }//inner
-	         System.out.println();
-	      }//outer
-	   
+		} // outer
 
-}//main
+		outer: for (int i = 1; i <= 3; i++) {// ë°˜ë³µë¬¸ì— ì´ë¦„ì„ ë¶™ì„
+			for (int j = 1; j <= 10; j++) {
+				if (j % 2 == 0) {
+					continue outer;// ì¡°ê±´ì— ë§ì•˜ì„ë•Œ ê°€ì¥ ê°€ê¹Œìš´ ë°˜ë³µë¬¸ì´ ì•„ë‹Œ í•´ë‹¹ ì´ë¦„ì˜ ë°˜ë³µë¬¸ì„ ë¹ ì ¸ë‚˜ê°„ë‹¤.
+				}
+				System.out.print(j + " ");
+			} // inner
+			System.out.println();
+		} // outer
+
+	}// main
 
 }
+
