@@ -20,15 +20,16 @@ public class WordPerfect {
 
 	public static void main(String[] args) {
 
-		String[] strArr = { "ELEPHANT", "SQUARREL", "RAINBOW", "INCREPAS"  };
+		String[] strArr = { "ELEPHANT", "SQUARREL", "RAINBOW", "INCREPAS" };
 		Random random = new Random();
 
 		Scanner sc = new Scanner(System.in);
 		String answer = "";
 		
 		int select = random.nextInt(strArr.length);
-		RandomSpeller rs = new RandomSpeller(strArr[select]);
+		
 		System.out.println("제시한 단어의 스펠링을 맞추어 보세요");
+		RandomSpeller rs = new RandomSpeller(strArr[select]);
 		System.out.println("문제 : " + rs.makeRandomWords());
 		
 		while (true) {

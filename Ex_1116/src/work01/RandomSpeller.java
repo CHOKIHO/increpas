@@ -18,7 +18,7 @@ public class RandomSpeller {
 		int[] arr = new int[max];
 		
 		for (int i=0; i<max;i++) {
-			arr[i] = random.nextInt(max) ;
+			arr[i] = random.nextInt(max);
 			
 			for (int j=0;j<i;j++) {
 				if (arr[i] == arr[j]) {
@@ -28,6 +28,20 @@ public class RandomSpeller {
 			}
 		}
 		
+/*      
+ * 		for문의 증감식을 본문으로 이동할 수도 있다. (outer label 사용)
+ * 
+  		outer: for (int i = 0; i < max;) {
+			for (int j = 0; j < i; j++) {
+				arr[i] = random.nextInt(max);
+				if (arr[i] == arr[j]) {
+					continue outer;
+				}
+			}
+			i++;
+		}
+*/
+		 	
 		StringBuilder sb = new StringBuilder("");
 		
 		for (int i=0;i<max;i++) {
