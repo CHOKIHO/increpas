@@ -20,7 +20,8 @@ public class GenMain {
 		gen3.printArr(cArr);
 */		
 
-		Gen gen = new Gen();
+		GenMethod gen = new GenMethod();
+		
 		gen.printArr(iArr);
 		gen.printArr(dArr);
 		gen.printArr(cArr);
