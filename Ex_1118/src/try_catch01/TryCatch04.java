@@ -13,9 +13,6 @@ public class TryCatch04 {
 		//정수 : abc
 		//abc는 정수가 아닙니다.
 		
-		
-		
-		
 		Scanner sc = new Scanner(System.in);
 		
 		while(true) {
@@ -32,6 +29,31 @@ public class TryCatch04 {
 				
 			} 
 		}
+		
+/*     개선방법
+  		String str = sc.next(); // 문자열로받는다.
+		
+		try {
+			str = sc.next();			
+			int n = Integer.parseInt(str);      <---- 이부분에서 예외발생
+			System.out.println("결과 : "+ n);
+			
+		} catch (NumberFormatException e) {     <----- 발생되는 NumberFormatException 예외
+			System.out.println(str + "정수 아님");
+			
+		}
+*/	
 	}
 
+	
 }
+
+
+
+
+
+
+
+
+
+
