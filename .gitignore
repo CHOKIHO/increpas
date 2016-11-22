@@ -73,3 +73,6 @@ test/src/test/java/TestGeneric2.java
 test/src/test/java/No13.java
 test/src/test/java/TempTest.java
 test/src/test/java/FileEx.java
+test/score.dat
+test/src/test/java/RandomAccessFileTest.java
+test/src/test/java/RandomAccessFileTest2.java
