@@ -19,7 +19,7 @@ public class Ex_ArrayList01 {
 		//map에서는 get(key)
 		System.out.println(list.get(2));
 		
-		//접근법 1
+		//※ ArrayList 접근법 1 - index사용
 		for (int i=0; i<list.size(); i++) {
 			System.out.print(list.get(i) + " ");
 		}
@@ -27,7 +27,7 @@ public class Ex_ArrayList01 {
 		System.out.println();
 		System.out.println("-----------------------");
 		
-		//접근법 2
+		//※ ArrayList 접근법 2 - iterator사용
 		Iterator<Integer> iter = list.iterator();
 		
 		while (iter.hasNext()) {
